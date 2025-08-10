@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia_forms</title>
+</head>
+<body>
+    <header>
+        <h1>User registration</h1>
+        <p>This form is mandatory for registration</p>
+    </header>
+    <section>
+        <h2>Personal information</h2>
+        <label>Full name:</label>
+        <input type="text" name="fullname" placeholder="Enter your full name" required></input>
+        <br/>
+        <label>Phone number:</label>
+        <input type="tel" name="phone" placeholder="Enter your phone number" required></input>
+        <br/>
+        <label>E-mail:</label>
+        <input type="email" name="email" placeholder="Enter your email address" required autocomplete="on"></input>
+        <br/>
+        <label>Address:</label>
+        <input type="text" name="address" placeholder="Enter your address" required></input>
+        <br/>
+        <label>Date of birth:</label>
+        <input type="date" name="dob" required></input>
+        <br/>
+        <label>Gender:</label>   
+        <select id="gemder" name="gender" required>
+            <option value="" disabled selected>Select your  </option>
+            <option vaue="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br/>
+        <label>
+            <input type="checkbox" name="terms" required>
+            I agree to the terms and conditions
+        </label>
+        <label>
+            <input type="checkbox" name="newsletter">
+            Subscribe to newsletter
+        </label>
+        <section>
+            <h2>Our values</h2>
+            <ul>
+                <li>Integrity</li>
+                <li>Innovation</li>
+                <li>Customer Focus</li>
+                <li>Excellence</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Our subcriptions</h2>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <thead>
+                    <th>Plan</th>
+                    <th>Price</th>
+                    <th>Features</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Basic</td>
+                        <td>$10/month</td>
+                        <td>Access to basic features</td>
+                   </tr>
+                    <tr>
+                        <td>Advanced</td>
+                        <td>$20/month</td>
+                        <td>Access to all features</td>
+                    </tr>
+                    <tr>
+                        <td>Premium</td>
+                        <td>$30/month</td>
+                        <td>Access to all features, custom solutions and priority support</td>
+                    </tr>   
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h1>
+             OUR TESTIMONIES
+            </h1>
+            <h2>listen to this audio</h2>
+            <audio controls>
+                <source src="testimony.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <h2>watch this video</h2>
+            <video width="320" height="240" controls>
+                <source src="testimony.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>read this document</h2>
+            <iframe src="testimony.pdf" width="400" height="200">
+                This browser does not support PDFs. Please download the PDF to view it: <a href="testimony.pdf">Download PDF</a>
+            </iframe>
+        </section>
+
+    </section>
+</body>
+ <footer>
+        <p>&copy; 2023 ITDhave. All rights reserved.</p>
+</html>
